@@ -4,7 +4,10 @@
 SERVICE_NAME=hello-world-printer
 DOCKER_NAME=$(SERVICE_NAME)
 USERNAME=bialekino
-TAG=$(USERNAME)/$(DOCKER_NAME)
+TAG=$(USERNAME)/$(DOCKER_NAME):$$(git describe --tags)
+
+tag:
+	@echo $(TAG)
 
 deps:
 	pip install -r requirements.txt; \
