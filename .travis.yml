@@ -1,12 +1,14 @@
 language: python
 services:
-  - docker
+- docker
 python:
-  - "2.7"
+- '2.7'
 install:
-  - make deps
+- make deps
 script:
-  - make test
-  - make lint
-  - make docker_build
-  - make docker_push
+- make test
+- make lint
+- make docker_build
+- make docker_push
+dd:
+  secure: Y9s5+B3fMAClsV20E+9tYRD8BoC1zJdQ3X9jOeByX8yUGuFLX+/AEXhWhj+X8bqG5XrKZhf0YmkBkdoxbQaunq5Smc4dQWRjGblDDn2DLex+iVo75F651pgVu1k8/lOpM3aac8zsseVD4cvbtaomfq+m+90jnx9aMHDiskyYg347PEMHgJ6wdvwjFs3qyykOpyCZ7syVQytqwCpvAhIFZ+QD4uqOfvpyxRiXird2btJ0siKZaU5zBZ8MRAyN7/AqU8bASxd9w+1J0nCiudSjDmamYaA/DaU1epuDyqZaJC+ms3sk7H3lSoYBMAiuFedPJ82A9gBBGzqFRB/0hFErvYnLf11Y0DXoOZfL827JYMCz/6v5asgvt+0tgblHpYPrUZ+2BfEte/5UU53w97SyuEgELVM9iT/8wJsqGz60DZIzxC4ijW0TP5HuyjVQNEXriS+QniEt2D/I8ie0Pbppt++IUpX9g0YRX/jLPqGUK1sk19sA8eSzgZIutRIeN85hJBMDw17KCIoM6hgim+Kd/AwmoKJuo5p26PROaGA2VOSZgNWmjeZXCOcHYj8Qlcf5leZTBj3WMABdsH5aZIv3dggx5xWex0L++1kWi6APrFIWKqQgkxoA8yC/aXvH/MNdpEl/rh7VBxO6SXhnQoquwesLxQqYvmIs+sISn2ijXq0=
