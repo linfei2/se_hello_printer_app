@@ -32,8 +32,6 @@ def format_to_json(msg, imie):
     }
 
     return json.dumps(output)
-    #return ('{ "imie":"' + imie + '", "msg":"' +
-     #       msg + '"}')
 
 
 def plain_text(msg, imie):
