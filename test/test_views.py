@@ -1,5 +1,6 @@
 import unittest
 import json
+from dicttoxml import dicttoxml
 from hello_world import app
 from hello_world.formater import SUPPORTED
 
@@ -24,8 +25,18 @@ class FlaskrTestCase(unittest.TestCase):
 
     def test_msg_with_xml_output(self):
         rv = self.app.get('/?output=xml')
-        self.assertEquals('<greetings><name>Bartek</name><msg>'
-                          'Hello World!</msg></greetings>', rv.data)
+        output = {
+            "name": "Bartek",
+            "msg": "Hello World!"
+        }
+
+        xml = dicttoxml(output,
+                        root=True,
+                        custom_root="greetings",
+                        cdata=False,
+                        attr_type=False)
+
+        self.assertEquals(xml.decode('utf-8'), rv.data)
 
     def test_msg_with_name_json_output(self):
         rv = self.app.get('/?output=json&name=apolonia')

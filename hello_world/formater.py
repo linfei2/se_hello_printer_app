@@ -1,4 +1,5 @@
 import json
+from dicttoxml import dicttoxml
 
 PLAIN = "plain"
 PLAIN_UP = "plain_uppercase"
@@ -47,5 +48,15 @@ def plain_text_lower_case(msg, imie):
 
 
 def format_to_xml(msg, imie):
-    return ('<greetings><name>' + imie + '</name><msg>'
-            + msg + '</msg></greetings>')
+    output = {
+        "name": imie,
+        "msg": msg
+    }
+
+    xml = dicttoxml(output,
+                    root=True,
+                    custom_root="greetings",
+                    cdata=False,
+                    attr_type=False)
+
+    return xml.decode('utf-8')
