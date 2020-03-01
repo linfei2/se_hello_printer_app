@@ -52,7 +52,10 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 - Integracja z TravisCI:
 
   ```
-  # miejsce na twoje notatki
+  # stwórz plik .travis.yml i dodaj do niego następujące dane:
+  language: python
+  python:
+  - '2.7'
   ```
 
 
