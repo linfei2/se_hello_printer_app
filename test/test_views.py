@@ -17,7 +17,7 @@ class FlaskrTestCase(unittest.TestCase):
     def test_msg_with_output(self):
         rv = self.app.get('/?output=json')
         output = {
-            "imie": "Bartek",
+            "imie": "Bartosz",
             "msg": "Hello World!"
         }
 
@@ -26,7 +26,7 @@ class FlaskrTestCase(unittest.TestCase):
     def test_msg_with_xml_output(self):
         rv = self.app.get('/?output=xml')
         output = {
-            "name": "Bartek",
+            "name": "Bartosz",
             "msg": "Hello World!"
         }
 
