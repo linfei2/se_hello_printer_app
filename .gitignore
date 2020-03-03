@@ -1,3 +1,6 @@
 **/*.pyc
 .cache
 flas-app/
+test_results.xml
+coverage.xml
+.coverage
