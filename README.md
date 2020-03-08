@@ -1,6 +1,6 @@
 # Simple Flask App [![Build Status](https://travis-ci.com/bartoszbialecki/se_hello_printer_app.svg?branch=master)](https://travis-ci.com/bartoszbialecki/se_hello_printer_app) [![Uptime Status](https://app.statuscake.com/button/index.php?Track=mtybpdFKaQ&Days=1&Design=2)](https://www.statuscake.com)
 
-Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
+Aplikacja dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
 o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
 - Rozpoczynając pracę z projektem (wykorzystując virtualenv). Hermetyczne środowisko dla pojedynczej aplikacji w python-ie:
